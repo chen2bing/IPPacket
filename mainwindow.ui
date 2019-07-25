@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>956</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>-20</y>
+      <width>311</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;IP数据包分片和重组&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="devInfo">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>641</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>120</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maxVisibleItems">
+     <number>100</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="getPacket">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>200</y>
+      <width>251</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>抓包</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="warningText">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>      请选择网卡</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="packetInfo">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>310</y>
+      <width>421</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="analysisInfo">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>310</y>
+      <width>421</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="mtu">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>540</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>540</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;MTU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="split">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>580</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>分片</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="splitInfo">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>640</y>
+      <width>421</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="assemble">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>540</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重组</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="assembleInfo">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>640</y>
+      <width>421</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>31</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;网&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;卡&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;信&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>41</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;数&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;据&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;包&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;信&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>330</y>
+      <width>51</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;数&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;据&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;包&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;解&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;析&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TearDrop">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>540</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TearDrop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DeathOfPing">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>540</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Death of Ping</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>670</y>
+      <width>31</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;数&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;据&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;包&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;分&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;片&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>670</y>
+      <width>31</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;数&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;据&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;包&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;组&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;装&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1070</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
